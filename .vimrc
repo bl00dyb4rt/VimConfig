@@ -1,0 +1,1 @@
+/home/b4rt/.vimrc
