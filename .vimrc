@@ -9,7 +9,6 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
@@ -18,6 +17,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
 Plug 'airblade/vim-gitgutter'
 Plug 'majutsushi/tagbar'
+Plug 'dense-analysis/ale'
 " Initialize plugin system
 call plug#end()
 "
@@ -90,3 +90,10 @@ vmap <S-Down> j
 " 
 " etc...
 " similarly <S-Left>, <S-Right> for v
+"
+:nnoremap <C-Left> :tabprevious<CR>
+:nnoremap <C-Right> :tabnext<CR>
+
+ca tn tabnew
+ca th tabp
+ca tl tabn
